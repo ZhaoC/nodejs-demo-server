@@ -5,6 +5,7 @@ const public = __dirname + "/public/";
 const fetch = require("node-fetch");
 const apiRequestPrefix =  "https://api.yelp.com/v3/businesses/search?categories=";
 
+// retrieve Yelp API data through node-fetch
 var fetchYelpData = function(url, res){
   fetch(url , {
     method: "GET",
@@ -27,7 +28,7 @@ var fetchYelpData = function(url, res){
   );
 };
 
-
+// setup static file folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {

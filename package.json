@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-demo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "ZhaoC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-fetch": "^2.0.0"
+  }
+}
